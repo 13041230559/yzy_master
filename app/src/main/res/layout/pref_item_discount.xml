@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:src="@mipmap/default_bg"
+        android:id="@+id/iamge_backg"
+        android:scaleType="fitXY"
+        android:layout_width="@dimen/dp_110"
+        android:layout_height="@dimen/dp_110"/>
+  <!--  <LinearLayout
+        android:layout_marginBottom="@dimen/dp_15"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/txt_title"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="一直娱官方"
+        android:textColor="@color/c3"
+        android:textSize="@dimen/sp_12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/txt_describe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp_8"
+            android:gravity="center"
+            android:text="寻找TA的气质"
+            android:textColor="@color/mian_color"
+            android:textSize="@dimen/sp_9"/>
+
+        <TextView
+            android:id="@+id/txt_shop_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp_6"
+            android:background="@drawable/txt_backg_shape"
+            android:gravity="center"
+            android:text="GOT7集合小卡"
+            android:textSize="@dimen/sp_9"
+            android:textStyle="bold"/>
+    </LinearLayout>-->
+</LinearLayout>

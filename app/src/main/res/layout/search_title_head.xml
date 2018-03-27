@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@color/ffffff"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:src="@mipmap/icon_details_hot_yzy"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20" />
+        <TextView
+            android:layout_marginLeft="@dimen/dp_15"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="热门搜索"
+            android:textSize="@dimen/sp_16"
+            android:textColor="@color/c3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <com.zhy.view.flowlayout.TagFlowLayout
+        android:id="@+id/flowlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50">
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="@dimen/dp_20"
+            android:layout_gravity="center"
+            android:src="@mipmap/icon_details_time_yzy"/>
+        <TextView
+            android:layout_marginLeft="@dimen/dp_15"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="搜索历史"
+            android:textSize="@dimen/sp_16"
+            android:textColor="@color/c3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_marginRight="15dp"
+            android:id="@+id/image_reomve"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:background="@mipmap/icon_delete_yzy" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:padding="@dimen/dp_10"
+              android:background="@color/white"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/txt_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:gravity="center|left"
+        android:text="11111111111111"
+        android:textColor="@color/c3"
+        android:textSize="@dimen/sp_15"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_marginBottom="@dimen/dp_10"
+        android:gravity="center|left"
+        android:id="@+id/txt_source"
+        android:textColor="@color/c3"
+        android:text="2017-06-06 资讯来源：娱大宝"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_32"/>
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="WebViewLayout"/>
+    <TextView
+        android:drawablePadding="@dimen/dp_10"
+        android:drawableLeft="@mipmap/icon_eye_browse_number_yzy"
+        android:gravity="left|center"
+        android:textColor="@color/c3"
+        android:id="@+id/txt_lick_count"
+        android:text="阅读:9999+"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_32"/>
+
+    <TextView
+        android:padding="@dimen/dp_20"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:drawablePadding="@dimen/dp_10"
+        android:drawableTop="@mipmap/icon_zan_grey_yzy"
+        android:textColor="@color/c3"
+        android:id="@+id/txt_good_lick"
+        android:text="2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

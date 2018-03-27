@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+          android:id="@+id/tag_item"
+          android:text="哈喽"
+          android:padding="@dimen/dp_10"
+          android:textSize="12sp"
+          android:gravity="center"
+          android:paddingLeft="@dimen/dp_5"
+          android:paddingRight="@dimen/dp_5"
+          android:textColor="@color/tv_tagcolor"
+          android:layout_marginRight="@dimen/dp_8"
+          android:layout_marginBottom="@dimen/dp_8"
+          android:background="@drawable/tv_bg"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"/>

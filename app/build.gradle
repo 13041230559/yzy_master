@@ -1,0 +1,174 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.jakewharton.butterknife'
+//apply plugin: 'me.tatarka.retrolambda'
+android {
+    compileSdkVersion 27
+
+    aaptOptions {
+        cruncherEnabled = false
+        useNewCruncher = false
+    }
+
+    defaultConfig {
+        applicationId "com.idolmedia.yzy"
+        minSdkVersion 17
+        multiDexEnabled true
+        targetSdkVersion 27
+        versionCode 7
+        versionName "2.0.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        ndk {
+            //设置支持的SO库架构
+            abiFilters 'armeabi' , 'x86', 'armeabi-v7a', 'x86_64', 'arm64-v8a'
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    buildToolsVersion '26.0.2'
+    dexOptions {
+        incremental true
+    }
+
+    dexOptions {
+        //使用增量模式构建
+        //incremental true
+        //最大堆内存
+        javaMaxHeapSize "4g"
+        //是否支持大工程模式
+        jumboMode = true
+        //预编译
+        preDexLibraries = true
+        //线程数
+        threadCount = 8
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['src/main/jniLibs']
+        }
+
+    }
+    aaptOptions {
+        cruncherEnabled = false
+        useNewCruncher = false
+    }
+
+    signingConfigs {
+        release {
+            keyAlias 'idolmedia'
+            keyPassword '456852'
+            storeFile file('../yzy.jks')
+            storePassword '456852'
+        }
+        debug {
+            keyAlias 'idolmedia'
+            keyPassword '456852'
+            storeFile file('../yzy.jks')
+            storePassword '456852'
+        }
+    }
+
+    android.applicationVariants.all { variant ->
+        variant.outputs.all {
+            def outputPathName = "apk"
+            def date = new Date()
+            def apkName = 'yzy-v' + versionName + "-" + variant.buildType.name + "-" + date.format("MM_dd_HH_mm") + '.apk'
+            outputFileName= new File(outputPathName + File.separator + versionName + File.separator + variant.buildType.name
+                    , apkName)
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/dependencies.txt'
+        exclude 'META-INF/LGPL2.1'
+        exclude 'META-INF/rxjava.properties'
+    }
+    compileOptions {
+        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_1_8
+    }
+
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    //  implementation project(':PushSDK')
+    implementation 'com.jakewharton:butterknife:8.5.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
+    implementation 'com.github.LuckSiege.PictureSelector:picture_library:v2.1.1'
+    implementation 'com.contrarywind:Android-PickerView:3.2.6'
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.0.3'
+    implementation 'com.scwang.smartrefresh:SmartRefreshHeader:1.0.3'
+    implementation 'com.malinskiy:superrecyclerview:1.1.4'
+    implementation 'rouchuan.viewpagerlayoutmanager:viewpagerlayoutmanager:2.0.0'
+    //阿里热更新
+ //   implementation 'com.aliyun.ams:alicloud-android-hotfix:3.2.1'
+    //标签布局
+    implementation 'com.zhy:flowlayout-lib:1.0.3'
+    //倒计时
+    implementation 'com.github.iwgang:countdownview:2.1.6'
+    //显示字体
+    implementation 'com.klinkerapps:link_builder:1.6.1'
+    implementation('com.github.gzu-liyujiang.AndroidPicker:WheelPicker:1.5.5') {
+        exclude group: 'com.android.support'
+    }
+    implementation 'ch.ielse:switchbutton:1.0.0'
+    implementation 'com.android.support:design:27.0.0'
+    // implementation 'ch.ielse:switchbutton:1.0.0'
+    implementation 'com.youth.banner:banner:1.4.10'
+    //最新版本
+    implementation 'com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar'
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+    //万能BaseRecyclerViewAdapterHelper
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.22'
+    //版本更新
+    implementation 'com.google.android:flexbox:0.3.2'
+    implementation 'com.github.czy1121:update:1.1.1'
+    implementation files('libs/SocialSDK_facebook.jar')
+    implementation files('libs/SocialSDK_instagram.jar')
+    implementation files('libs/SocialSDK_QQ_Simplify.jar')
+    implementation files('libs/SocialSDK_Sina_Simplify.jar')
+    implementation files('libs/SocialSDK_twitter.jar')
+    implementation files('libs/SocialSDK_WeiXin_Full.jar')
+    implementation files('libs/umeng_shareboard_widget.jar')
+    implementation files('libs/umeng_social_api.jar')
+    implementation files('libs/umeng_social_net.jar')
+    implementation files('libs/umeng_social_shareboard.jar')
+    implementation files('libs/umeng_social_shareview.jar')
+    implementation files('libs/umeng_social_tool.jar')
+    implementation files('libs/wechat-sdk-android-with-mta-1.1.6.jar')
+    implementation files('libs/alipaySdk-20170725.jar')
+    implementation files('libs/pinyin4j-2.5.0.jar')
+    //字体对齐的TextView
+    implementation 'me.codeboy.android:align-text-view:2.3.1'
+    //内存检测
+    debugImplementation 'com.squareup.leakcanary:leakcanary-android:1.5'
+    releaseImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.5'
+    testDebugImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.5'
+    //高斯模糊
+    implementation 'jp.wasabeef:glide-transformations:3.0.1'
+    implementation project(':PushSDK')
+    implementation project(':pullzoom')
+    implementation project(':library-Common')
+    implementation 'com.jakewharton.rxbinding:rxbinding:1.0.0'
+    implementation 'com.jakewharton.rxbinding:rxbinding-support-v4:1.0.0'
+    implementation 'com.jakewharton.rxbinding:rxbinding-appcompat-v7:1.0.0'
+    implementation 'com.jakewharton.rxbinding:rxbinding-recyclerview-v7:1.0.0'
+}

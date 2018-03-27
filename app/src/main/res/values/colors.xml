@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <color name="mian_color" >#fc4f4f</color>
+
+   <color name="white0">#eeeeee</color>
+   <color name="txtselect_color" >#ed3d3d</color>
+   <color name="txtcolor">#1d1b1b</color>
+   <color name="f5">#f5f5f5</color>
+   <color name="ffffff">#ffffff</color>
+   <color name="c6">#666666</color>
+   <color name="cccccc">#cccccc</color>
+   <color name="e6">#eeeeee</color>
+   <color name="b1b1b1">#1b1b1b</color>
+   <color name="yzmcode">#42bab6</color>
+   <color name="f3ac7c9">#3ac7c9</color>
+   <color name="violet">#8770ed</color>
+   <color name="fe">#ffeeee</color>
+   <color name="fc4f4f">#fc4f4f</color>
+   <color name="ff8282">#ff8282</color>
+   <color name="ff5757">#ff5757</color>
+   <color name="f161515">#161515</color>
+   <color name="fafafa">#f5f5f5 </color>
+   <color name="ffc244">#ffc244</color>
+   <color name="ed3d3d">#ed3d3d</color>
+   <color name="fea94e">#fea94e</color>
+   <color name="fd9a58">#fd9a58</color>
+   <color name="dd2f2f">#dd2f2f</color>
+   <color name="im_font_color_text_hint">#abb1b6</color>
+   <color name="grayd">#dddddd</color>
+   <color name="blue_1000">#039dff</color>
+
+
+
+   <color name="pop_bg_content">#F9F9F9</color>
+   <color name="pop_bg_translucent">#01000000</color>
+   <color name="pop_bg_translucent_half">#70000000</color>
+   <color name="transparent">#00000000</color>
+   <color name="pop_item_text_normal_color">#007AFF</color>
+   <color name="pop_item_text_warning_color">#FF3B30</color>
+   <color name="pop_item_bg_pressed">#EBEBEB</color>
+
+   <color name="pop_action_sheet_title">#4d4d4d</color>
+   <color name="pop_action_sheet_message">#8f8f8f</color>
+
+</resources>

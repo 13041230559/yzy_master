@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:background="@color/white"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/dp_64">
+    <LinearLayout
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+    <TextView
+        android:drawablePadding="@dimen/dp_5"
+        android:id="@+id/txt_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/txt_pl"
+        android:drawableLeft="@mipmap/icon_eye_browse_number_yzy"
+        android:gravity="center"
+        android:paddingRight="@dimen/dp_30"
+        android:text="浏览"
+        android:textColor="@color/c6"
+        android:textSize="@dimen/sp_15"/>
+
+    <TextView
+        android:drawablePadding="@dimen/dp_5"
+        android:id="@+id/txt_pl"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/txt_good"
+        android:drawableLeft="@mipmap/icon_say_yzy"
+        android:gravity="center"
+        android:paddingRight="@dimen/dp_30"
+        android:text="评论"
+        android:textColor="@color/c6"
+        android:textSize="@dimen/sp_15"/>
+
+    <TextView
+        android:paddingRight="@dimen/dp_30"
+        android:drawablePadding="@dimen/dp_5"
+        android:id="@+id/txt_good"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/imageView2"
+        android:drawableLeft="@mipmap/icon_zan_grey_yzy"
+        android:gravity="center"
+        android:textColor="@color/c6"
+        android:text="66666"
+        android:textSize="@dimen/sp_15"/>
+    </LinearLayout>
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/iamge_sns"
+        android:layout_width="@dimen/dp_30"
+        android:layout_height="@dimen/dp_30"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="right|center"
+        android:layout_marginEnd="14dp"
+        android:src="@mipmap/icon_more_yzy"/>
+</RelativeLayout>

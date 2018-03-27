@@ -1,0 +1,150 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipChildren="false">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:paddingTop="5dp"
+            android:id="@+id/tab_recommend"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/tab_recommend_iamge"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:src="@drawable/selector_home" />
+            <TextView
+                android:layout_margin="5dp"
+                android:id="@+id/tab_recommend_txt"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="推荐"
+                android:textSize="@dimen/sp_10"
+                android:textColor="@color/textcolor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingTop="5dp"
+            android:id="@+id/tab_star"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/tab_star_iamge"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:src="@drawable/selector_star" />
+            <TextView
+                android:layout_margin="5dp"
+                android:textSize="@dimen/sp_10"
+                android:textColor="@color/textcolor"
+                android:id="@+id/tab_star_txt"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="星踪"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:orientation="vertical"
+            android:layout_gravity="bottom"
+            android:clipChildren="false"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp">
+            <ImageView
+                android:id="@+id/tab_iamge_zy"
+                android:layout_width="54dp"
+                android:layout_height="54dp"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="@dimen/dp_5"
+                android:src="@mipmap/icon_yu_round_before_yzy"/>
+            <TextView
+
+                android:visibility="gone"
+                android:textColor="@color/textcolor"
+                android:id="@+id/tab_zy_txt"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="星踪"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:paddingTop="5dp"
+            android:id="@+id/tab_shopcart"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_gravity="center"
+                android:id="@+id/tab_shopcart_iamge"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:src="@drawable/selector_cart" />
+            <TextView
+                android:layout_margin="5dp"
+                android:textSize="@dimen/sp_10"
+                android:textColor="@color/textcolor"
+                android:id="@+id/tab_shopcart_txt"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="购物车"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingTop="5dp"
+            android:id="@+id/tab_me"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_gravity="center"
+                android:id="@+id/tab_me_iamge"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:src="@drawable/selector_me" />
+            <TextView
+                android:layout_margin="5dp"
+                android:textSize="@dimen/sp_10"
+                android:textColor="@color/textcolor"
+                android:id="@+id/tab_me_txt"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="我的"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
+

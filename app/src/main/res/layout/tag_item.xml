@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+      android:id="@+id/tag_txt"
+      android:paddingRight="@dimen/dp_15"
+      android:paddingLeft="@dimen/dp_15"
+    android:layout_marginRight="@dimen/dp_5"
+    android:layout_marginBottom="@dimen/dp_5"
+      android:text="明星透扇"
+      android:gravity="center"
+      android:background="@drawable/tv_search_tag"
+      android:textColor="@color/tag_selector"
+      android:layout_width="wrap_content"
+      android:layout_height="@dimen/dp_32"/>

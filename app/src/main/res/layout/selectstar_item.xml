@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_marginTop="@dimen/dp_30"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+<ImageView
+    android:id="@+id/iamg_starhead"
+    android:src="@mipmap/ic_launcher"
+    android:layout_width="@dimen/dp_72"
+    android:layout_height="@dimen/dp_72"/>
+
+    <ImageView
+        android:id="@+id/iamge_like"
+        android:layout_marginTop="@dimen/dp_15"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_18"
+        android:layout_gravity="center"/>
+
+    <!--<LinearLayout
+        android:background="@drawable/loginbtn_shape"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/sp_18">
+        <ImageView
+            android:id="@+id/iamg_follow"
+            android:layout_gravity="center"
+            android:src="@mipmap/ic_launcher"
+            android:layout_marginTop="@dimen/dp_15"
+            android:layout_width="@dimen/dp_10"
+            android:layout_height="@dimen/dp_10"
+            />-->
+
+
+</LinearLayout>

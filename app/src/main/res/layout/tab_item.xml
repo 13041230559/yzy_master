@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/txt_item"
+        android:paddingRight="@dimen/dp_20"
+        android:paddingLeft="@dimen/dp_20"
+        android:paddingBottom="@dimen/dp_10"
+        android:paddingTop="@dimen/dp_10"
+        android:background="@drawable/edit_backshape"
+        android:text="交易记录"
+        android:gravity="center"
+        android:textColor="@color/mian_color"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_44"/>
+
+</android.support.constraint.ConstraintLayout>

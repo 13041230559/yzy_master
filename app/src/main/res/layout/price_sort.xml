@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:id="@+id/liner_price"
+    android:layout_height="match_parent" android:gravity="center">
+
+        <TextView
+            android:id="@+id/txt_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="价格"
+            android:textColor="@drawable/selectcolor" />
+            <ImageView
+                android:layout_marginLeft="2dp"
+              android:id="@+id/image_price"
+              android:layout_width="15dp"
+              android:layout_height="15dp"
+              android:src="@mipmap/icon_down_yzy"
+              />
+</LinearLayout>

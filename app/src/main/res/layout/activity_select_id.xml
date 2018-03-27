@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+  <include layout="@layout/include_head_title"/>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/dp_30"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iamge_fans_team"
+            android:layout_gravity="center"
+            android:src="@mipmap/img_certification_team_yzy"
+
+            android:layout_width="@dimen/dp_165"
+            android:layout_height="@dimen/dp_165"/>
+        <TextView
+
+            android:layout_marginTop="@dimen/dp_15"
+            android:text="@string/fans_team"
+            android:textSize="@dimen/sp_16"
+            android:textColor="@color/c3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="@dimen/dp_44"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@mipmap/img_certification_company_yzy"
+            android:id="@+id/iamge_thirdparty"
+            android:layout_gravity="center"
+            android:layout_width="@dimen/dp_165"
+            android:layout_height="@dimen/dp_165"/>
+        <TextView
+            android:text="@string/third_party"
+            android:textSize="@dimen/sp_16"
+            android:layout_marginTop="@dimen/dp_15"
+            android:textColor="@color/c3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

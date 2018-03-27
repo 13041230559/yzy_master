@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="ss_header" type="id" />
+    <item name="ss_zoom" type="id" />
+    <item name="ss_content" type="id" />
+</resources>

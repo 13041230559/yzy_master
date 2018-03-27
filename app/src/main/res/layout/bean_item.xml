@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_66">
+<TextView
+    android:textSize="@dimen/sp_15"
+    android:text="评论"
+    android:layout_gravity="left|center"
+    android:gravity="center"
+    android:textColor="@color/c3"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"/>
+    <TextView
+        android:layout_weight="1"
+        android:layout_marginLeft="@dimen/dp_8"
+        android:textSize="@dimen/sp_12"
+        android:text="2017-10-10 19:21"
+        android:layout_gravity="left|center"
+        android:gravity="center"
+        android:textColor="@color/c9"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"/>
+    <TextView
+        android:textSize="@dimen/sp_16"
+        android:text="+5.00"
+        android:layout_gravity="left|center"
+        android:gravity="center"
+        android:textColor="@color/f161515"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"/>
+    <TextView
+        android:textSize="@dimen/sp_14"
+        android:text="  娱豆"
+        android:layout_gravity="left|center"
+        android:gravity="center"
+        android:textColor="@color/c9"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"/>
+</LinearLayout>

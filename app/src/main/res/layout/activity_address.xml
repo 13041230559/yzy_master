@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:background="@color/white"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <include layout="@layout/include_head_title"/>
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        app:srlEnablePureScrollMode="true"
+        app:srlEnableLoadmore="true"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    <TextView
+        android:id="@+id/txt_go"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/fd9a58"
+        android:gravity="center"
+        android:textSize="@dimen/sp_18"
+        android:text="@string/add_address"
+        android:textColor="@color/white" />
+</LinearLayout>

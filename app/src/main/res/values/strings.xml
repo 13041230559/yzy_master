@@ -1,0 +1,235 @@
+<resources>
+    <string name="app_name">一直娱</string>
+    <string name="abuot">    一直娱APP是一款有无限可能的明星泛娱乐APP，粉丝经济创新领导者。正品周边、第三方入驻、一站式团购周边、实时资讯、应援偶像，全新的一直娱旨在带领粉丝玩转娱乐，花更少的钱，得到更多的惊喜。</string>
+    <string name="login">登 录</string>
+    <string name="registr">注 册</string>
+    <string name="forgotpassword">忘记密码</string>
+    <string name="noid">还没有账号? 立即注册</string>
+    <string name="imregistr">立即注册</string>
+    <string name="please_phone_mail">请输入手机号或邮箱</string>
+    <string name="pleasepass">请输入6-20位密码</string>
+    <string name="pleasecode">请输入验证码</string>
+    <string name="codelogin">验证码登录</string>
+    <string name="passlogin">密码登录</string>
+    <string name="regain">重新获取</string>
+    <string name="searchshop">请输入你要搜索的商品</string>
+    <string name="quicklogin">快捷登录</string>
+    <string name="smslogin">短信登录</string>
+    <string name="registrmobile">手机注册</string>
+    <string name="registmail">邮箱注册</string>
+    <string name="useragreement">点击注册，即表示你同意《一直娱的用户协议》</string>
+    <string name="user_agreement">《一直娱的用户协议》</string>
+    <string name="determine">确 定</string>
+    <string name="passwordretrieval">找回密码</string>
+    <string name="classification">分类</string>
+    <string name="preferential">特惠</string>
+    <string name="activity">活动</string>
+    <string name="seckill">秒杀</string>
+    <string name="preferentialarea">特惠专区</string>
+    <string name="selectok_startyzy">选好了,开始一起娱~</string>
+    <string name="support_activity">活动应援</string>
+    <string name="Understandingandcoordination">感谢您的理解与配合</string>
+    <string name="Networksecuritylaw">根据《网络安全法》,需账号实名认证</string>
+    <string name="bind">绑定</string>
+    <string name="bind_mobile">绑定手机号</string>
+    <string name="user_name">用户名</string>
+    <string name="edit">编辑</string>
+    <string name="cancel">取消</string>
+    <string name="edit_name">编辑昵称</string>
+    <string name="apply_for_certification">申请认证</string>
+    <string name="authenticated">已认证</string>
+    <string name="hasrefused">已拒绝</string>
+    <string name="audit">审核中</string>
+
+    <string name="no_authenticated">申请认证</string>
+    <string name="see_personal_center">查看或编辑个人中心</string>
+    <string name="my_fans">我的粉丝</string>
+    <string name="my_ido">我的关注</string>
+    <string name="Initiator">发起人</string>
+    <string name="Initiatingtime">发起时间</string>
+    <string name="pushtime">发布时间</string>
+    <string name="Has_raised_money">应筹目标金额(元)</string>
+    <string name="Raise_money">筹措金额(元)</string>
+    <string name="Setting">设置</string>
+    <string name="id_and_security">账号与安全</string>
+    <string name="commit">提交</string>
+    <string name="authentication_management_protocol">点击提交，即表示同意爱豆的认证经营协议</string>
+    <string name="authentication">实名认证</string>
+    <string name="countdown_activity">距离活动结束倒计时:</string>
+    <string name="myorder">我的订单</string>
+    <string name="current_phone">当前手机号：%s</string>
+    <string name="select_ido">选择你的爱豆</string>
+    <string name="activity_">活动</string>
+    <string name="buy_immediately">立即购买</string>
+    <string name="add_cart">加入购物车</string>
+    <string name="lucky_record">幸运记录</string>
+    <string name="shop_class">商品分类</string>
+    <string name="all_class">全部分类</string>
+    <string name="all_shop">全部商品</string>
+    <string name="business_agreement">认证经营协议</string>
+    <string name="select_class">选择数量及分类</string>
+    <string name="reserved_number">已预订%d件已选%d件</string>
+    <string name="select_number">购买数量</string>
+    <string name="limit">(每人限购%d件你已经购买%d件)</string>
+    <string name="you_buy_number">你已经购买%d件</string>
+    <string name="limit_xg">每人限购%d件</string>
+    <string name="deductible">定金:%s可抵:%s</string>
+
+    <string name="fans_team">我是粉丝团</string>
+    <string name="third_party">我是第三方</string>
+    <string name="pay_select">选择支付方式</string>
+    <string name="pay_countdown">支付倒计时:</string>
+    <string name="pay_price">支付金额:</string>
+    <string name="zfb">支付宝</string>
+    <string name="wxpay">微信支付</string>
+    <string name="okpay">确认支付</string>
+    <string name="pay_order">支付订单</string>
+    <string name="ok_order">确认订单</string>
+    <string name="read_ok_agree">阅读并同意《一直娱活动支持协议》</string>
+    <string name="yzy_agree">《一直娱活动支持协议》</string>
+    <string name="total">合计: ￥%s</string>
+    <string name="sold_out">已售出: %d</string>
+    <string name="sold_out_">已售出 %d件</string>
+    <string name="order_msg">订单信息</string>
+    <string name="submit_order">提交订单</string>
+    <string name="create_time">创建时间: %s</string>
+    <string name="order_number">订单编号: %s</string>
+    <string name="winning_people">中奖者: %s</string>
+    <string name="winning_number">中奖号码： %s</string>
+    <string name="winning_participate">本期参与：%d 人次</string>
+    <string name="winning_time">揭晓时间：%s</string>
+    <string name="seckil_total">合计:%d娱豆</string>
+    <string name="seckil_total_required">总需：%s人次</string>
+    <string name="participation_number">共%d人次</string>
+    <string name="have_reserved">已预订: %d</string>
+    <string name="have_reserved_">已预订 %d件</string>
+    <string name="purchase_shop">%d人购买</string>
+    <string name="view_number">查看号码</string>
+    <string name="surplus">剩余：%d</string>
+    <string name="go_receive">马上领取</string>
+    <string name="dditional">我要追加</string>
+    <string name="look_logistics">查看物流</string>
+    <string name="select_id">身份选择</string>
+    <string name="my_bean">我的娱豆</string>
+    <string name="save">保存</string>
+    <string name="bean">%s娱豆</string>
+    <string name="invalid_number">失效周边%d件</string>
+    <string name="clear_invalid">清空失效周边</string>
+    <string name="add_address">添加地址</string>
+    <string name="update_address">修改地址</string>
+    <string name="cnsignee">收货人</string>
+    <string name="contact_number">联系电话</string>
+    <string name="default_address">[默认地址] </string>
+    <string name="release">发布</string>
+    <string name="all_release">全部发布</string>
+    <string name="my_release_content">商品 %s | 社区 %s | 活动 %s</string>
+    <string name="js">拥有无限可能的明星泛娱乐媒体</string>
+    <string name="service_agreement">一直娱用户服务协议</string>
+    <string name="logistics_msg">物流详情</string>
+    <string name="yu_self_support">娱自营</string>
+    <string name="deposit_time">定金周期:  (%s-%s)</string>
+    <string name="retainage_time">尾款周期:  (%s)</string>
+
+    <string name="star_time">开始时间:  %s</string>
+    <string name="end_time">结束时间:  %s</string>
+    <string name="deposit">定金:  ￥%s</string>
+    <string name="retainage">尾款:  ￥%s</string>
+    <string name="deposit_deductible">定金: ￥%s可抵: ￥%s</string>
+    <string name="stock">库存: %d件</string>
+    <string name="paydeposit">支付定金</string>
+    <string name="payretainage">支付尾款</string>
+    <string name="payretainage_unopened">尾款未开启</string>
+    <string name="payretainage_over">尾款已结束</string>
+    <string name="order_group_itempirce">共%d件商品      小计:￥%s</string>
+    <string name="no_freight">(不含运费)</string>
+    <string name="freight">(含运费￥%s)</string>
+    <string name="all_number">共%d件商品</string>
+    <string name="pay_money">实付金额:￥%s</string>
+    <string name="shop_type">类型:%s</string>
+    <string name="fans_count">粉丝 %d</string>
+    <string name="fans_attention_count">粉丝 %d 关注 %d</string>
+    <string name="ubing_thirdparty">确认解绑%s吗?</string>
+
+    <string name="please_six_twenty_pass">请输入6-20位用户密码</string>
+
+    <string name="share">http://www.withfans.com/webProgress/webPage/productDetail.html?id=%d&amp;shop_type=%s&amp;random=%d&amp;from=android</string>
+    <string name="agreement">一直娱服务条款
+一直娱 是通过国际互联网络为您提供一种全新海淘明星周边，获取明星资讯的泛娱乐产品；您只有完全同意下列所有服务条款并完成注册程序，才能成为一直娱的用户并使用相应服务。您在使用一直娱提供的各项服务之前，应仔细阅读本用户协议。
+　　您在注册程序过程中点击“同意条款，立即注册”按钮即表示您与一直娱达成协议，完全接受本服务条款项下的全部条款。您一旦使用一直娱的服务，即视为您已了解并完全同意本服务条款各项内容，包括一直娱对服务条款随时做的任何修改。
+一．服务内容
+　　一直娱的具体服务内容由一直娱根据实际情况提供，例如网购需要的个人信息以及评论，在线交流等。一直娱保留变更、中断或终止部分网络服务的权利。
+　　一直娱保留根据实际情况随时调整本平台提供的服务种类、形式。一直娱不承担因业务调整给用户造成的损失。
+二．注册义务
+为了能使用本服务，您同意以下事项：依本服务注册提示请您填写正确的注册邮箱、密码和名号，并确保今后更新的登陆邮箱、名号、头像等资料的有效性和合法性。若您提供任何违法、不道德或一直娱认为不适合在本产品上展示的资料；或者一直娱有理由怀疑你的资料属于程序或恶意操作，一直娱有权暂停或终止您的帐号，并拒绝您于现在和未来使用本服务之全部或任何部分。
+一直娱所有产品均由正规官方渠道采购，在购买产品所产生的资料填写、消费等行为，一直娱均无需对任何用户的任何登记资料承担任何责任，包括但不限于鉴别、核实任何登记资料的真实性、正确性、完整性、适用性及/或是否为最新资料的责任。
+三．内容使用权
+用户在一直娱发表的内容（包含但不限于××网目前各产品功能里的内容）仅表明其个人的立场和观点，并不代表一直的立场或观点。作为内容的发表者，需自行对所发表内容负责，因所发表内容引发的一切纠纷，由该内容的发表者承担全部法律及连带责任。一直不承担任何法律及连带责任。 用户在一直发布侵犯他人知识产权或其他合法权益的内容，一直有权予以删除，一直不承担任何法律及连带责任，并保留移交司法机关处理的权利。　　
+用户不得使用一直服务发送或传播敏感信息和违反国家法律制度的信息，包括但不限于下列信息：
+1. 反对宪法所确定的基本原则的；
+2.危害国家安全，泄露国家秘密，颠覆国家政权，破坏国家统一的；
+3. 损害国家荣誉和利益的；
+4. 煽动民族仇恨、民族歧视，破坏民族团结的；
+5. 破坏国家宗教政策，宣扬邪教和封建迷信的；
+6. 散布谣言，扰乱社会秩序，破坏社会稳定的；
+7. 散布淫秽、色情、赌博、暴力、凶杀、恐怖或者教唆犯罪的；
+8.侮辱或者诽谤他人，侵害
+他人合法权益的；
+9.含有法律、行政法规禁止的其他内容的。
+用户承诺发表言论要：爱国、守法、自律、真实、文明。不传输任何非法的、骚扰性的、中伤他人的、辱骂性的、恐吓性的、伤害性的、庸俗的，淫秽的、危害国家安全的、泄露国家机密的、破坏国家宗教政策和民族团结的以及其它违反法律法规及政策的内容。 若用户的行为不符合以上提到的服务条款，一直娱将作出独立判断立即取消用户服务帐号。用户需对自己在网上的行为承担法律责任，一直娱不承担任何法律及连带责任。
+四．隐私保护
+保护用户隐私是一直娱的重点原则，一直娱通过技术手段、提供隐私保护服务功能、强化内部管理等办法充分保护用户的个人资料安全。
+本隐私声明适用于一直娱的所有相关服务，随着一直娱服务范围的扩大，隐私声明的内容可由一直娱随时更新，且毋须另行通知。更新后的隐私声明一旦在网页上公布即有效代替原来的隐私声明。
+　　一直娱严格保护您个人信息的安全。我们使用各种安全技术和程序来保护您的个人信息不被未经授权的访问、使用或泄漏。
+　　一直娱会在法律要求或符合一直娱的相关服务条款、软件许可使用协议约定的情况下透露您的个人信息，或者有充分理由相信必须这样做才能：
+(a) 满足法律或行政法规的明文规定，或者符合一直娱网站适用的法律程序；
+（b）符合一直娱相关服务条款、软件许可使用协议的约定；
+(c) 保护一直娱的权利或财产，以及在紧急情况下保护一直娱员工、一直娱产品或服务的用户或大众的个人安全。
+　　一直娱不会未经您的允许将这些信息与第三方共享，本声明已经列出的上述情况除外。
+五．社区准则
+　　用户使用本服务的行为若有任何违反国家法律法规或侵犯任何第三方的合法权益的情形时，一直娱有权直接删除该等违反规定之内容。
+　　除非与一直娱单独签订合同，否则不得将社区用于商业目的；一直娱仅供个人使用。
+　　不可以通过自动方式创建账户，也不可以对账户使用自动系统执行操作。
+　　用户影响系统总体稳定性或完整性的操作可能会被暂停或终止，直到问题得到解决。
+一直娱提倡
+1. 分享、互助和开放；
+2. 宽容和理性地对待不同的看法、喜好和意见；
+3. 尊重他人的隐私和个人空间。
+一直娱不欢迎
+1. 针对种族、国家、民族、宗教、性别、年龄、地缘、性取向、生理特征的歧视和仇恨言论；
+2. 不雅词句、人身攻击、故意骚扰和恶意使用；
+3. 色情、激进时政、意识形态方面的话题；
+4. 频繁发布形式恶劣的广告内容。
+一直娱不允许
+1. 违反中国或一直娱成员所在地法律法规的行为和内容（相关政策法规）；
+2. 威胁他人或一直娱成员自身的人身安全、法律安全的行为；
+3. 对网站的运营安全有潜在威胁的内容。
+一直娱关于APP内商品消费的指导原则
+1.所有消费行为均为用户自行发起，一旦消费，在无不可抗因素导致的收货问题下，均不予以退款；
+2.APP内所有商品，在国内现货的情况下，保证24小时内发货；一直娱自营海外商品，现货将从北京发出，未标明现货均为从韩国采购商品，下单之后7~15天发货。
+3.海外直邮产品，无不可抗因素情况下，一般均为预定产品，待预定期截止后，从商品发行后最晚48小时内都将发货。预定后一直娱从韩国订货，
+4.所有一直娱内晒单、评论、发帖内容不得涉及违反社区法规内容，一经发现不当内容，一直娱运营人员有责任和义务及时移除与商品或活动主题不符合的物品以及违反一直娱社区指导原则的内容；
+　　　　
+六．免责声明
+　　一旦您注册成为用户即表示您与一直娱达成协议，完全接受本服务条款项下的全部条款。对免责声明的解释、修改及更新权均属于一直娱网所有。
+1. 由于您将用户密码告知他人或与他人共享注册帐户，由此导致的任何个人信息的泄漏，或其他非因一直娱原因导致的个人信息的泄漏，一直娱不承担任何法律责任；
+2. 任何第三方根据一直娱各服务条款及声明中所列明的情况使用您的个人信息，由此所产生的纠纷，一直娱不承认任何法律责任；
+3. 任何由于黑客攻击、电脑病毒侵入或政府管制而造成的暂时性网站关闭，一直娱不承担任何法律责任；
+4. 我们鼓励用户充分利用一直娱平台自由地张贴和共享自己的信息。您可以自由张贴图片等内容，但这些内容必须位于公共领域内，或者您拥有这些内容的使用权。同时，用户不应在自己的个人主页或社区中张贴其他受版权保护的内容。
+5. 用户在一直娱网发布侵犯他人知识产权或其他合法权益的内容，一直娱网有权予以删除，并保留移交司法机关处理的权利。
+6. 用户对于其创作并在一直娱上发布的合法内容依法享有著作权及其相关权利。
+7. 互联网是一个开放平台，用户将图片等资料上传到互联网上，有可能会被其他组织或个人复制、转载、擅改或做其它非法用途，用户必须充分意识此类风险的存在。用户明确同意其使用一直娱服务所存在的风险将完全由其自己承担；因其使用一直娱服务而产生的一切后果也由其自己承担，一直娱在非一直娱技术原因造成的信息泄露情况下，对用户信息不承担任何责任。
+七．服务变更、中断或终止
+　　如因系统维护或升级的需要而需暂停网络服务、服务功能的调整，一直娱将尽可能事先在网站上进行通告。
+　　如发生下列任何一种情形，一直娱有权单方面中断或终止向用户提供服务而无需通知用户：
+　　1.用户提供的个人资料不真实；
+　　2.用户违反本服务条款中规定的使用规则；
+　　3.未经一直娱同意，将一直娱平台用于商业目的。
+八．服务条款的完善和修改
+　　一直娱会有权根据互联网的发展和中华人民共和国有关法律、法规的变化，不时地完善和修改一直娱服务条款。一直娱保留随时修改服务条款的权利，用户在使用一直娱平台服务时，有必要对最新的一直娱服务条款进行仔细阅读和重新确认，当发生有关争议时，请以最新的服务条款为准。
+九．特别约定
+　
+　用户使用本服务的行为若有任何违反国家法律法规或侵犯任何第三方的合法权益的情形时，一直娱有权直接删除该等违反规定之信息，并可以暂停或终止向该用户提供服务。
+　　若用户利用本服务从事任何违法或侵权行为，由用户自行承担全部责任，一直娱不承担任何法律及连带责任。因此给一直娱或任何第三方造成任何损失，用户应负责全额赔偿。
+</string>
+</resources>
+

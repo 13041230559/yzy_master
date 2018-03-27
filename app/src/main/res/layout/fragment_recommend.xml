@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:background="@color/white"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <View
+        android:id="@+id/tile_view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+<include layout="@layout/search_top"></include>
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/smart_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.idolmedia.yzy.view.popwindow.ObservableScrollView
+            android:id="@+id/ob_scrolview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+               <LinearLayout
+                   android:id="@+id/liner_scrollView"
+                   android:orientation="vertical"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+                  <include layout="@layout/recommend_recycler_header"/>
+                   <android.support.design.widget.TabLayout
+                       android:id="@+id/tab_layout"
+                       android:layout_width="match_parent"
+                       android:layout_height="@dimen/dp_44"
+                       app:tabIndicatorColor="@color/white"
+                       app:tabSelectedTextColor="@color/mian_color"
+                       app:tabTextColor="@color/c3"
+                       />
+
+                   <android.support.v7.widget.RecyclerView
+                       android:id="@+id/recyclerView"
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"/>
+
+               </LinearLayout>
+
+
+        </com.idolmedia.yzy.view.popwindow.ObservableScrollView>
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

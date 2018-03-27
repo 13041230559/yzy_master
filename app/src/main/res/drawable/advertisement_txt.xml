@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+<corners android:radius="@dimen/dp_35"></corners>
+    <!--边框颜色-->
+    <stroke android:width="1dip" android:color="@color/Accent"></stroke>
+    <solid android:color="#80f5316d"></solid>
+</shape>

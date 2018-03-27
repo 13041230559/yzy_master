@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:background="@color/white"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <include layout="@layout/include_head_title"/>
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        app:srlEnablePureScrollMode="true"
+        app:srlEnableLoadmore="true"
+        android:layout_height="match_parent">
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:background="@color/ffffff"
+                    android:paddingLeft="15dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:paddingBottom="5dp"
+                    android:layout_height="50dp">
+                    <TextView
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:text="@string/cnsignee"
+                        android:textSize="@dimen/sp_16"
+                        android:textColor="@color/black"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent" />
+                    <EditText
+                        android:textSize="@dimen/sp_16"
+                        android:id="@+id/ed_name"
+                        android:background="@null"
+                        android:textColor="@color/c6"
+                        android:gravity="center|left"
+                        android:layout_gravity="center"
+                        android:text=""
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:background="@color/gray"
+                    android:layout_height="@dimen/dp_1"/>
+                <LinearLayout
+                    android:background="@color/ffffff"
+                    android:paddingLeft="15dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:paddingBottom="5dp"
+                    android:layout_height="50dp">
+                    <TextView
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:text="@string/contact_number"
+                        android:textColor="@color/black"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+                    <EditText
+                        android:id="@+id/ed_phone"
+                        android:background="@null"
+                        android:textColor="@color/black"
+                        android:gravity="center|left"
+                        android:layout_gravity="center"
+                        android:text=""
+                        android:inputType="phone"
+                        android:digits="12345647890"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:background="@color/gray"
+                    android:layout_height="@dimen/dp_1"/>
+
+                <LinearLayout
+                    android:background="@color/ffffff"
+                    android:paddingLeft="15dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:paddingBottom="5dp"
+                    android:layout_height="50dp">
+                    <TextView
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:text="所在地区"
+                        android:textColor="@color/black"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+                    <TextView
+                        android:layout_marginRight="@dimen/dp_10"
+                        android:drawableRight="@mipmap/icon_back_right_black_yzy"
+                        android:id="@+id/txt_city"
+                        android:text="请选择"
+                        android:layout_weight="1"
+                        android:gravity="center|right"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:background="@color/gray"
+                    android:layout_height="@dimen/dp_1"/>
+
+                <EditText
+                    android:paddingRight="@dimen/dp_10"
+                    android:paddingLeft="@dimen/dp_10"
+                    android:paddingTop="5dp"
+                    android:id="@+id/ed_detailedaddrss"
+                    android:textColorHint="@color/c6"
+                    android:hint="详细地址"
+                    android:background="@color/white0"
+                    android:gravity="top|left"
+                    android:layout_gravity="center"
+                    android:textSize="14sp"
+                    android:textColor="@color/c6"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_100"/>
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:id="@+id/liner_address"
+                    android:layout_marginLeft="15dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:paddingBottom="5dp"
+                    android:layout_height="50dp">
+                    <TextView
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:text="设为默认地址"
+                        android:textColor="@color/g6"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+                    <TextView
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                    <ch.ielse.view.SwitchView
+                        android:layout_gravity="center"
+                        android:id="@+id/switch_button"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                      />
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    <TextView
+        android:id="@+id/txt_go"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/fc4f4f"
+        android:gravity="center"
+        android:textSize="@dimen/sp_18"
+        android:text="@string/save"
+        android:textColor="@color/white" />
+</LinearLayout>

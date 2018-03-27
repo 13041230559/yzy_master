@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+    <View
+        android:background="@color/fafafa"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_2"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_125">
+        <RelativeLayout
+            android:layout_width="@dimen/dp_125"
+            android:layout_height="@dimen/dp_125">
+            <ImageView
+                android:scaleType="fitXY"
+                android:src="@mipmap/default_bj"
+                android:id="@+id/iamge_figure"
+                android:layout_width="@dimen/dp_125"
+                android:layout_height="@dimen/dp_125"/>
+
+            <ImageView
+                android:id="@+id/iamge_isdeposit"
+                android:layout_width="@dimen/dp_40"
+                android:layout_height="@dimen/dp_40"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:src="@mipmap/icon_d_yzy"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_margin="@dimen/dp_5"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:lines="2"
+                android:ellipsize="end"
+                android:id="@+id/txt_title"
+                android:text="txt_title"
+                android:textColor="@color/c6"
+                android:textSize="@dimen/sp_13"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_40"/>
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_gravity="bottom"
+                    android:id="@+id/txt_sold"
+                    android:text="已预订1000件"
+                    android:textColor="@color/c9"
+                    android:textSize="@dimen/sp_12"
+                    android:gravity="center|left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/dp_35"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_original_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="￥145"
+                        android:textColor="@color/c9"
+                        android:textSize="@dimen/sp_12"/>
+
+                    <TextView
+                        android:id="@+id/txt_pirce"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|right"
+                        android:gravity="center"
+                        android:text="定金"
+                        android:textColor="@color/c9"
+                        android:textSize="@dimen/sp_12"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:id="@+id/txt_discount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginTop="@dimen/dp_2"
+                        android:gravity="right"
+                        android:text="￥145"
+                        android:textColor="@color/mian_color"
+                        android:textSize="@dimen/sp_16"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:background="@color/fafafa"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_2"/>
+</LinearLayout>

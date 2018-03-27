@@ -1,0 +1,57 @@
+package com.idolmedia.yzy.utlis;
+
+/**
+ * 项目名称：com.idolmedia.yzy.utlis
+ * 创建人：JOKER.WANG
+ * 创建时间：2017/12/13 17:35
+ * 描述：
+ */
+
+import android.content.Context;
+import android.graphics.Canvas;
+import android.support.v7.widget.AppCompatTextView;
+import android.util.AttributeSet;
+import android.view.Gravity;
+
+
+public class VerticalTextView extends AppCompatTextView{
+    final boolean topDown;
+
+
+    public VerticalTextView(Context context, AttributeSet attrs){
+        super(context, attrs);
+        final int gravity = getGravity();
+        if(Gravity.isVertical(gravity) && (gravity&Gravity.VERTICAL_GRAVITY_MASK) == Gravity.BOTTOM) {
+            setGravity((gravity&Gravity.HORIZONTAL_GRAVITY_MASK) | Gravity.TOP);
+            topDown = false;
+        }else
+            topDown = true;
+    }
+
+
+    @Override
+    protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec){
+        super.onMeasure(heightMeasureSpec, widthMeasureSpec);
+        setMeasuredDimension(getMeasuredHeight(), getMeasuredWidth());
+    }
+
+
+    @Override
+    protected boolean setFrame(int l, int t, int r, int b){
+        return super.setFrame(l, t, l+(b-t), t+(r-l));
+    }
+
+
+    @Override
+    public void draw(Canvas canvas){
+        if(topDown){
+            canvas.translate(getHeight(), 0);
+            canvas.rotate(90);
+        }else {
+            canvas.translate(0, getWidth());
+            canvas.rotate(-90);
+        }
+        canvas.clipRect(0, 0, getWidth(), getHeight(), android.graphics.Region.Op.REPLACE);
+        super.draw(canvas);
+    }
+}

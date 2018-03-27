@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:background="@color/white"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+<include layout="@layout/search_top"/>
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_layout"
+        android:background="@color/mian_color"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_44"
+        app:tabIndicatorColor="@color/mian_color"
+        app:tabSelectedTextColor="@color/fea94e"
+        app:tabTextColor="@color/white"
+        />
+    <android.support.v7.widget.RecyclerView
+        android:padding="@dimen/dp_15"
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

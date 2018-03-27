@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_44">
+<TextView
+    android:gravity="left|center"
+    android:layout_gravity="center"
+    android:textSize="14sp"
+    android:layout_weight="1"
+    android:id="@+id/txt_search_name"
+    android:text="search_name"
+    android:textColor="@color/black"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />
+    <ImageView
+        android:layout_marginRight="15dp"
+        android:layout_gravity="center"
+        android:src="@mipmap/icon_wrong_red_yzy"
+        android:id="@+id/iamge_del"
+        android:layout_width="@dimen/dp_20"
+        android:layout_height="@dimen/dp_20" />
+</LinearLayout>

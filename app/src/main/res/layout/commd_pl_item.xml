@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:id="@+id/liner_content"
+              android:background="@color/white"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/img_pl_head"
+        android:src="@mipmap/ic_launcher"
+        android:layout_width="@dimen/dp_50"
+        android:layout_height="@dimen/dp_50"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+     <TextView
+         android:id="@+id/txt_pl_name"
+         android:textSize="@dimen/sp_15"
+         android:text="JOKER.WANG"
+         android:textColor="@color/c3"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"/>
+
+        <TextView
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:lines="2"
+            android:layout_marginTop="@dimen/dp_5"
+            android:id="@+id/txt_pl_context"
+            android:textSize="@dimen/sp_15"
+            android:text="王嘉尔的跑男首秀竟然变成了他招黑般的不知道大家知不知道呀"
+            android:textColor="@color/c6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_marginTop="@dimen/dp_5"
+            android:id="@+id/txt_pl_titme"
+            android:textSize="@dimen/sp_15"
+            android:text="3分钟  上海"
+            android:textColor="@color/c6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>

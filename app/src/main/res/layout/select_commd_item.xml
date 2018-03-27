@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:text="EXO"
+    android:layout_marginBottom="@dimen/dp_5"
+    android:layout_marginRight="@dimen/dp_10"
+    android:id="@+id/select_item"
+    android:textColor="@color/tv_tagcolor"
+    android:background="@drawable/tv_bg"
+    android:layout_height="wrap_content">
+
+</TextView>
