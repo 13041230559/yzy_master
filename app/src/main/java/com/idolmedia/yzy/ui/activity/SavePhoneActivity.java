@@ -12,6 +12,7 @@ import android.widget.TextView;
 
 import com.idolmedia.yzy.R;
 import com.idolmedia.yzy.entity.BaseResult;
+import com.idolmedia.yzy.entity.Countryentity;
 import com.idolmedia.yzy.ui.mvp.contract.SavePhoneContract;
 import com.idolmedia.yzy.ui.mvp.model.SavePhoneModel;
 import com.idolmedia.yzy.ui.mvp.presenter.SavePhonePresenter;
@@ -22,11 +23,14 @@ import com.mumu.common.utils.JsonUtils;
 import com.mumu.common.utils.RxCountDown;
 import com.mumu.common.utils.ToastUitl;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import cn.qqtheme.framework.picker.SinglePicker;
 import rx.Subscriber;
 import rx.Subscription;
 
@@ -246,12 +250,38 @@ public class SavePhoneActivity extends BaseActivity<SavePhonePresenter, SavePhon
         }
     }
 
-    @OnClick({R.id.image_close, R.id.right_txt})
+    @OnClick({R.id.image_close, R.id.right_txt,R.id.cy_number})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.image_close:
                 finish();
                 break;
+            case  R.id.cy_number:
+                List<Countryentity> data = new ArrayList<>();
+                data.add(new Countryentity(86,"中国大陆"));
+                data.add(new Countryentity( 886,"中国台湾"));
+                data.add(new Countryentity(852 ,"中国香港"));
+                data.add(new Countryentity(853,"中国澳门"));
+                data.add(new Countryentity(60,"马来西亚"));
+                data.add(new Countryentity(82,"韩国"));
+                data.add(new Countryentity(61,"澳大利亚"));
+                data.add(new Countryentity(55,"巴西"));
+                data.add(new Countryentity(1,"加拿大"));
+                data.add(new Countryentity(1,"美国"));
+                data.add(new Countryentity( 81 ,"日本"));
+                SinglePicker<Countryentity> picker = new SinglePicker<>(this, data);
+                picker.setCanceledOnTouchOutside(false);
+                picker.setSelectedIndex(0);
+                picker.setTextSize(18);
+                picker.setTextColor(getResources().getColor(R.color.c3));
+                picker.setCycleDisable(false);
+                picker.setOnItemPickListener((index, item) -> {
+                    cyNumber.setText(item.getCountryname()+"+"+item.getCountrycode());
+                    country_code=String.valueOf(item.getCountrycode());
+                });
+                picker.show();
+                break;
+
             case R.id.right_txt:
                 if (updatename) {
                 } else {
